@@ -1,112 +1,417 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cara Melatih Kepercayaan Diri Anak Secara Online | The Speaker's Journey</title>
-  <meta name="description" content="Pelajari cara melatih kepercayaan diri anak secara online dengan metode yang efektif. Cocok untuk anak pemalu agar lebih berani tampil dan percaya diri.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://thespeakersjourney.id/blog.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Melatih Kepercayaan Diri Anak Secara Online | The Speaker's Journey</title>
+    <meta name="description" content="Pelajari cara melatih kepercayaan diri anak secara online dengan metode yang efektif. Cocok untuk anak pemalu agar lebih berani tampil dan percaya diri.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thespeakersjourney.id/blog.html">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #4A90E2;
+            --soft-yellow: #F5D76E;
+            --gentle-pink: #F8BBD9;
+            --dark-text: #2C3E50;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-text);
+            background: #f8f9fa;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+
+        .navbar-sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 50;
+            backdrop-filter: blur(20px) saturate(180%);
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-blue), #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--dark-text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .nav-links a.active {
+            color: var(--primary-blue);
+        }
+
+        .btn-nav {
+            background: linear-gradient(135deg, var(--primary-blue), #5BA0F2);
+            color: white !important;
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-nav:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(74, 144, 226, 0.4);
+        }
+
+        .hero-blog {
+            background: linear-gradient(135deg, #4A90E2 0%, #764ba2 100%);
+            padding: 140px 24px 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-blog::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-blog h1 {
+            color: white;
+            font-size: clamp(2rem, 5vw, 3rem);
+            max-width: 800px;
+            margin: 0 auto 16px;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-blog .meta {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .hero-blog .meta span {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 6px 16px;
+            border-radius: 20px;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: -40px auto 80px;
+            padding: 0 24px;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            padding: 48px;
+        }
+
+        .article-content h2 {
+            color: var(--dark-text);
+            font-size: 1.75rem;
+            margin: 48px 0 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--primary-blue);
+            display: inline-block;
+        }
+
+        .article-content h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .article-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .article-content ul {
+            margin: 20px 0 30px;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .article-content ul li {
+            padding: 12px 0 12px 32px;
+            position: relative;
+            font-size: 1.05rem;
+            color: #555;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .article-content ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+            font-weight: bold;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), rgba(118, 75, 162, 0.1));
+            border-radius: 20px;
+            padding: 32px;
+            text-align: center;
+            margin: 40px 0;
+            border: 2px solid rgba(74, 144, 226, 0.2);
+        }
+
+        .cta-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            color: var(--dark-text);
+        }
+
+        .cta-box p {
+            margin-bottom: 24px;
+            color: #666;
+        }
+
+        .btn-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, var(--primary-blue), #5BA0F2);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(74, 144, 226, 0.4);
+        }
+
+        .btn-cta:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px rgba(74, 144, 226, 0.5);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            gap: 12px;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: white;
+            padding: 48px 24px 24px;
+            text-align: center;
+        }
+
+        footer p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+        }
+
+        footer .brand {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-blue), #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .article-card {
+                padding: 24px;
+            }
+
+            .article-content h2 {
+                font-size: 1.4rem;
+            }
+
+            .article-content p {
+                font-size: 1rem;
+            }
+
+            .hero-blog h1 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto;">
+<body>
+    <nav class="navbar-sticky">
+        <div class="nav-container">
+            <a href="https://thespeakersjourney.id/" class="nav-logo">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+                The Speaker's Journey
+            </a>
+            <div class="nav-links">
+                <a href="https://thespeakersjourney.id/">Home</a>
+                <a href="https://thespeakersjourney.id/#program">Program</a>
+                <a href="https://thespeakersjourney.id/#testimoni">Testimoni</a>
+                <a href="https://thespeakersjourney.id/blog.html" class="active">Blog</a>
+                <a href="https://wa.me/6281246514244?text=Halo%2C+saya+ingin+daftar+program" class="btn-nav">Daftar Sekarang</a>
+            </div>
+        </div>
+    </nav>
 
-  <nav style="margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #eee;">
-    <a href="https://thespeakersjourney.id/" style="color: #2563eb; text-decoration: none; font-weight: 600;">← Kembali ke Home</a>
-  </nav>
-
-  <article>
-    <header style="margin-bottom: 40px;">
-      <p style="color: #666; font-size: 14px;">Artikel • Public Speaking Anak</p>
-      <h1 style="font-size: 28px; line-height: 1.3; color: #1a1a1a;">Cara Melatih Kepercayaan Diri Anak Secara Online (Terbukti Efektif)</h1>
+    <header class="hero-blog">
+        <h1>Cara Melatih Kepercayaan Diri Anak Secara Online (Terbukti Efektif)</h1>
+        <div class="meta">
+            <span>📚 Public Speaking Anak</span>
+            <span>⏱️ 5 menit baca</span>
+        </div>
     </header>
 
-    <p>
-      Banyak orang tua merasa khawatir ketika melihat anaknya cenderung pemalu, sulit berbicara,
-      atau tidak percaya diri saat harus tampil di depan orang lain.
-    </p>
+    <main class="article-container">
+        <article class="article-card">
+            <a href="https://thespeakersjourney.id/" class="back-link">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Kembali ke Home
+            </a>
 
-    <p>
-      Di era digital saat ini, tantangan tersebut justru semakin meningkat.
-      Anak lebih sering berinteraksi dengan layar dibandingkan dengan orang lain,
-      sehingga kemampuan komunikasi mereka tidak terlatih dengan baik.
-    </p>
+            <div class="article-content">
+                <p>Banyak orang tua merasa khawatir ketika melihat anaknya cenderung <strong>pemalu</strong>, sulit berbicara, atau tidak percaya diri saat harus tampil di depan orang lain.</p>
 
-    <h2>Kenapa Anak Bisa Kurang Percaya Diri?</h2>
+                <p>Di era digital saat ini, tantangan tersebut justru semakin meningkat. Anak lebih sering berinteraksi dengan layar dibandingkan dengan orang lain, sehingga kemampuan komunikasi mereka tidak terlatih dengan baik.</p>
 
-    <p>
-      Kurangnya kepercayaan diri pada anak biasanya disebabkan oleh beberapa faktor:
-    </p>
+                <h2>Kenapa Anak Bisa Kurang Percaya Diri?</h2>
 
-    <ul>
-      <li>Takut salah atau ditertawakan</li>
-      <li>Jarang diberi kesempatan berbicara</li>
-      <li>Kurang latihan komunikasi sejak dini</li>
-      <li>Lingkungan yang kurang mendukung</li>
-    </ul>
+                <p>Kurangnya kepercayaan diri pada anak biasanya disebabkan oleh beberapa faktor:</p>
 
-    <h2>Apakah Belajar Secara Online Efektif?</h2>
+                <ul>
+                    <li>Takut salah atau ditertawakan</li>
+                    <li>Jarang diberi kesempatan berbicara</li>
+                    <li>Kurang latihan komunikasi sejak dini</li>
+                    <li>Lingkungan yang kurang mendukung</li>
+                </ul>
 
-    <p>
-      Banyak orang tua berpikir bahwa belajar harus selalu tatap muka.
-      Namun faktanya, pembelajaran online justru memiliki banyak keunggulan:
-    </p>
+                <h2>Apakah Belajar Secara Online Efektif?</h2>
 
-    <ul>
-      <li>Lebih nyaman karena dari rumah</li>
-      <li>Anak lebih berani mencoba</li>
-      <li>Fleksibel dan tidak terikat lokasi</li>
-      <li>Bisa fokus secara personal (private)</li>
-    </ul>
+                <p>Banyak orang tua berpikir bahwa belajar harus selalu tatap muka. Namun faktanya, pembelajaran online justru memiliki banyak keunggulan:</p>
 
-    <h2>Cara Efektif Melatih Kepercayaan Diri Anak</h2>
+                <ul>
+                    <li>Lebih nyaman karena dari rumah</li>
+                    <li>Anak lebih berani mencoba</li>
+                    <li>Fleksibel dan tidak terikat lokasi</li>
+                    <li>Bisa fokus secara personal (private)</li>
+                </ul>
 
-    <p>
-      Berikut beberapa cara yang terbukti membantu meningkatkan kepercayaan diri anak:
-    </p>
+                <h2>Cara Efektif Melatih Kepercayaan Diri Anak</h2>
 
-    <ul>
-      <li>Memberi kesempatan anak berbicara setiap hari</li>
-      <li>Melatih anak bercerita di depan keluarga</li>
-      <li>Mendorong anak tampil tanpa takut salah</li>
-      <li>Mengikuti program public speaking yang tepat</li>
-    </ul>
+                <p>Berikut beberapa cara yang terbukti membantu meningkatkan kepercayaan diri anak:</p>
 
-    <h2>Solusi yang Lebih Terarah</h2>
+                <ul>
+                    <li>Memberi kesempatan anak berbicara setiap hari</li>
+                    <li>Melatih anak bercerita di depan keluarga</li>
+                    <li>Mendorong anak tampil tanpa takut salah</li>
+                    <li>Mengikuti program public speaking yang tepat</li>
+                </ul>
 
-    <p>
-      Salah satu cara paling efektif adalah dengan mengikuti program public speaking anak
-      yang dirancang khusus untuk membangun kepercayaan diri secara bertahap.
-    </p>
+                <h2>Solusi yang Lebih Terarah</h2>
 
-    <p>
-      Program seperti ini tidak hanya melatih anak untuk berbicara,
-      tetapi juga membantu mereka mengenal diri, berpikir lebih terstruktur,
-      dan berani tampil di depan orang lain.
-    </p>
+                <p>Salah satu cara paling efektif adalah dengan mengikuti <strong>program public speaking anak</strong> yang dirancang khusus untuk membangun kepercayaan diri secara bertahap.</p>
 
-    <h2>Program Private untuk Anak Anda</h2>
+                <p>Program seperti ini tidak hanya melatih anak untuk berbicara, tetapi juga membantu mereka mengenal diri, berpikir lebih terstruktur, dan berani tampil di depan orang lain.</p>
 
-    <p>
-      The Speaker's Journey menyediakan program private coaching online
-      yang fokus pada perkembangan setiap anak secara personal.
-    </p>
+                <div class="cta-box">
+                    <h3>Ingin Anak Anda Lebih Percaya Diri?</h3>
+                    <p>Ikuti program private coaching yang fokus pada perkembangan setiap anak secara personal</p>
+                    <a href="https://wa.me/6281246514244?text=Halo%2C+saya+sudah+membaca+artikel+cara+melatih+kepercayaan+diri+anak+dan+ingin+konsultasi" class="btn-cta">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        Konsultasi via WhatsApp
+                    </a>
+                </div>
 
-    <p>
-      Dengan pendekatan bertahap, anak tidak hanya belajar berbicara,
-      tetapi juga membangun karakter, kepercayaan diri,
-      dan kemampuan komunikasi yang kuat.
-    </p>
+                <h2>Program Private untuk Anak Anda</h2>
 
-    <div style="margin-top: 30px; padding: 20px; background: #f3f4f6; border-radius: 10px; text-align: center;">
-      <p style="font-weight: bold;">
-        Ingin anak Anda lebih percaya diri dan berani tampil?
-      </p>
-      <a href="https://wa.me/6281246514244?text=Halo%2C+saya+sudah+membaca+artikel+cara+melatih+kepercayaan+diri+anak+dan+ingin+konsultasi"
-         style="display: inline-block; margin-top: 10px; background: #2563eb; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none;">
-         Konsultasi Sekarang
-      </a>
-    </div>
-  </article>
+                <p><strong>The Speaker's Journey</strong> menyediakan program private coaching online yang fokus pada perkembangan setiap anak secara personal.</p>
 
+                <p>Dengan pendekatan bertahap, anak tidak hanya belajar berbicara, tetapi juga membangun karakter, kepercayaan diri, dan kemampuan komunikasi yang kuat.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <a href="https://thespeakersjourney.id/" class="brand">The Speaker's Journey</a>
+        <p>Mengembangkan komunikasi anak Indonesia menjadi lebih percaya diri dan efektif.</p>
+        <p style="margin-top: 16px;">© 2025 The Speaker's Journey. All rights reserved.</p>
+    </footer>
 </body>
 </html>
